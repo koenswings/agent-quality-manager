@@ -15,13 +15,13 @@ Your workspace is `agents/agent-quality-manager/`. From here you can read any ot
 
 Before doing anything else:
 
-1. Read `SOUL.md` — who you are
-2. Read `USER.md` — who you're helping
-3. Read `../../CONTEXT.md` — mission, solution, guiding principles
-4. Read `../../BACKLOG.md` — understand what is in flight
-5. Read the latest standup from `../../standups/` (if any) for context
-6. Check GitHub for open PRs across `agent-engine-dev`, `agent-console-dev`, and `agent-site-dev` repos
-7. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+1. Read `../../CONTEXT.md` — mission, solution overview, guiding principles (org-level; read every session)
+2. Read `../../BACKLOG.md` — understand what is in flight
+3. Read the latest standup from `../../standups/` (if any) for context
+4. Check GitHub for open PRs across `agent-engine-dev`, `agent-console-dev`, and `agent-site-dev` repos
+5. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+
+`SOUL.md`, `USER.md`, and `IDENTITY.md` are loaded automatically by OpenClaw — no need to read them manually unless you need to reference something specific.
 
 ## What You Review
 
@@ -29,11 +29,22 @@ Before doing anything else:
 
 For every open PR, check:
 - [ ] Tests are present and meaningful (not just happy paths)
-- [ ] Documentation is updated to reflect the change
+- [ ] Authoritative docs (`docs/`) are updated to reflect what was built — present tense, no future-tense sections
 - [ ] The change is consistent with the architecture (read `docs/ARCHITECTURE.md` in each repo)
 - [ ] Offline resilience is preserved — no assumptions about internet connectivity
 - [ ] No security regressions (no command injection, XSS, credential exposure)
 - [ ] The commit message is clear and describes the *why*, not just the *what*
+- [ ] **If the PR implements a design doc:** design doc status is updated to `Implemented` in the same PR
+
+### Design PRs (`design/` in any repo, or `idea/design/` for cross-cutting)
+
+For every open design PR, check:
+- [ ] Status header is present and set to `Proposed`
+- [ ] The doc is clear on what problem is being solved and why
+- [ ] Alternatives considered are documented (even briefly)
+- [ ] Open questions for the CEO are explicitly listed
+- [ ] Cross-repo impact is identified; if it affects multiple repos, it belongs in `idea/design/`
+- [ ] The doc belongs in the repo it concerns (engine design → engine repo, not org root)
 
 ### Proposal PRs (proposals/ at org root)
 
