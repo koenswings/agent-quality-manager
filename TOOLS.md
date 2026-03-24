@@ -1,5 +1,19 @@
 # TOOLS.md — Quality Manager
 
+## API Credentials
+
+- `BASE_URL=http://172.18.0.1:8000`
+- `AUTH_TOKEN` — load from `.env` in this directory (gitignored, never committed)
+- `AGENT_NAME=Veri`
+- `AGENT_ID=ac172302-3c45-4a51-bdb3-dc233a0f65e8`
+- `BOARD_ID=d0cfa49e-edcb-4a23-832b-c2ae2c99bf67`
+- `WORKSPACE_ROOT=/home/node/workspace`
+- `WORKSPACE_PATH=/home/node/workspace/agents/agent-quality-manager`
+- Required tools: `curl`, `jq`
+
+See the **mc-api** shared skill for OpenAPI refresh, discovery policy, and usage examples:
+`/home/node/workspace/skills/mc-api/SKILL.md`
+
 ## Environment
 
 - **QM workspace:** `/home/node/workspace/agents/agent-quality-manager`
