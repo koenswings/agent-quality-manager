@@ -15,13 +15,13 @@ Your workspace is `agents/agent-quality-manager/`. From here you can read any ot
 
 Before doing anything else:
 
-1. Read `SOUL.md` — who you are
-2. Read `USER.md` — who you're helping
-3. Read `../../CONTEXT.md` — mission, solution, guiding principles
-4. Read `../../BACKLOG.md` — understand what is in flight
-5. Read the latest standup from `../../standups/` (if any) for context
-6. Check GitHub for open PRs across `agent-engine-dev`, `agent-console-dev`, and `agent-site-dev` repos
-7. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+1. Read `../../CONTEXT.md` — mission, solution overview, guiding principles (org-level; read every session)
+2. Read `../../BACKLOG.md` — understand what is in flight
+3. Read the latest standup from `../../standups/` (if any) for context
+4. Check GitHub for open PRs across `agent-engine-dev`, `agent-console-dev`, and `agent-site-dev` repos
+5. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+
+`SOUL.md`, `USER.md`, and `IDENTITY.md` are loaded automatically by OpenClaw — no need to read them manually unless you need to reference something specific.
 
 ## What You Review
 
