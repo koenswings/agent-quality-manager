@@ -23,6 +23,17 @@ Before doing anything else:
 6. Check GitHub for open PRs across `agent-engine-dev`, `agent-console-dev`, and `agent-site-dev` repos
 7. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
 
+## Memory
+
+Write important context, decisions, and lessons to `memory/YYYY-MM-DD.md` each session.
+
+**All repos are branch-protected — never push directly to `main`.** Memory commits go on a persistent branch:
+
+1. Commit memory files to the `memory/updates` branch
+2. Push to `origin/memory/updates`
+3. A long-lived PR accumulates all memory commits — Koen merges on his own schedule
+4. After a merge, recreate `memory/updates` from the new `main`
+
 ## What You Review
 
 ### Code PRs (agent-engine-dev, agent-console-dev, agent-site-dev)
