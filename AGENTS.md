@@ -29,11 +29,22 @@ Before doing anything else:
 
 For every open PR, check:
 - [ ] Tests are present and meaningful (not just happy paths)
-- [ ] Documentation is updated to reflect the change
+- [ ] Authoritative docs (`docs/`) are updated to reflect what was built — present tense, no future-tense sections
 - [ ] The change is consistent with the architecture (read `docs/ARCHITECTURE.md` in each repo)
 - [ ] Offline resilience is preserved — no assumptions about internet connectivity
 - [ ] No security regressions (no command injection, XSS, credential exposure)
 - [ ] The commit message is clear and describes the *why*, not just the *what*
+- [ ] **If the PR implements a design doc:** design doc status is updated to `Implemented` in the same PR
+
+### Design PRs (`design/` in any repo, or `idea/design/` for cross-cutting)
+
+For every open design PR, check:
+- [ ] Status header is present and set to `Proposed`
+- [ ] The doc is clear on what problem is being solved and why
+- [ ] Alternatives considered are documented (even briefly)
+- [ ] Open questions for the CEO are explicitly listed
+- [ ] Cross-repo impact is identified; if it affects multiple repos, it belongs in `idea/design/`
+- [ ] The doc belongs in the repo it concerns (engine design → engine repo, not org root)
 
 ### Proposal PRs (proposals/ at org root)
 
